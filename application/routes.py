@@ -13,42 +13,42 @@ except ImportError:
 
 
 ##############################################################################
-@api.route('/api','/api/')
-class GetAndPost(Resource):
-    #get all users
-    def get(self):
-        return jsonify(User.objects.all())
+# @api.route('/api','/api/')
+# class GetAndPost(Resource):
+#     #get all users
+#     def get(self):
+#         return jsonify(User.objects.all())
 
-    #post a new user
-    def post(self):
-        data=api.payload
-        user=User(user_id=data['user_id'],  first_name=data['first_name'], last_name=data['last_name'],email=data['email'],)
-        user.set_password(data['password'])
-        user.save()
-        return jsonify(User.objects(user_id=data['user_id']))
+#     #post a new user
+#     def post(self):
+#         data=api.payload
+#         user=User(user_id=data['user_id'],  first_name=data['first_name'], last_name=data['last_name'],email=data['email'],)
+#         user.set_password(data['password'])
+#         user.save()
+#         return jsonify(User.objects(user_id=data['user_id']))
 
 
-@api.route('/api/<idx>','/api/<idx>/')
-class GetUpdateDelete(Resource):
-    #get user by id
-    def get(self,idx):
-        return jsonify(User.objects(user_id=idx))
+# @api.route('/api/<idx>','/api/<idx>/')
+# class GetUpdateDelete(Resource):
+#     #get user by id
+#     def get(self,idx):
+#         return jsonify(User.objects(user_id=idx))
 
-    #update user by id
-    def put(self,idx):
-        data=api.payload
-        User.objects(user_id=idx).update(**data)
-        # user.first_name=data['first_name']
-        # user.last_name=data['last_name']
-        # user.email=data['email']
-        # user.set_password(data['password'])
-        # user.save()
-        return jsonify(User.objects(user_id=idx))
+#     #update user by id
+#     def put(self,idx):
+#         data=api.payload
+#         User.objects(user_id=idx).update(**data)
+#         # user.first_name=data['first_name']
+#         # user.last_name=data['last_name']
+#         # user.email=data['email']
+#         # user.set_password(data['password'])
+#         # user.save()
+#         return jsonify(User.objects(user_id=idx))
 
-    #delete user by id
-    def delete(self,idx):
-        User.objects(user_id=idx).delete()
-        return jsonify(User.objects(user_id=idx))
+#     #delete user by id
+#     def delete(self,idx):
+#         User.objects(user_id=idx).delete()
+#         return jsonify(User.objects(user_id=idx))
     
 
 
