@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            {% for user in users %}
+            <dl>
+                <dt>User ID: {{user.user_id}}</dt>
+                <dd>Email: {{user.email}}</dd>
+            </dl>
+            {% else %}
+                <p>No users found.</p>
+            {% endfor %}
+    </div>
+
+{% endblock %}
