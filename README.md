@@ -27,10 +27,15 @@ The following features are complete:
 ## Screenshots
 
 ![home](https://user-images.githubusercontent.com/82932047/187224876-d579c069-4a68-4766-9957-2f27efcf73ca.png)
+
 ![register](https://user-images.githubusercontent.com/82932047/187224904-ba30c646-e004-4424-ba32-d1c508aa0c11.png)
+
 ![login](https://user-images.githubusercontent.com/82932047/187224968-9c7c7dbd-b6fa-4eed-8bf7-37d552fd2091.png)
+
 ![login-home](https://user-images.githubusercontent.com/82932047/187224983-0e0e98a2-6bb4-4e86-846a-09be9e8416f7.png)
+
 ![courses](https://user-images.githubusercontent.com/82932047/187225004-12450ca6-8e1d-4594-9167-7b9740a44c0e.png)
+
 ![enrollment](https://user-images.githubusercontent.com/82932047/187225046-b7584d36-34a1-4374-a9b2-f47dc2b3ee4d.png)
 
 
